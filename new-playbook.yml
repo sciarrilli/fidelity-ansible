@@ -1,14 +1,11 @@
 ---
-- name: ebgp fabric
-  hosts: leafs
+- hosts: leafs
   gather_facts: no
   connection: local
   roles:
     - leafs
-- name: ebgp fabric
-  hosts: spines
+- hosts: spines
   gather_facts: no
   connection: local
   roles:
     - spines
-      
