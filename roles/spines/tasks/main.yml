@@ -23,4 +23,5 @@
     hostname: "{{ inventory_hostname }}"
   register: result
   tags: activate
-  - debug: var=result
+
+- debug: var=result
