@@ -40,9 +40,9 @@ interface {{interface}}
  port link-mode route
  ip address {{intvars[interface].ipv4}} 255.255.255.0
 {% elif intvars[interface].vlan is defined %}
-port link-mode bridge
-port link-type trunk
-port trunk permit vlan {{intvars[interface].vlan}}
+ port link-mode bridge
+ port link-type trunk
+ port trunk permit vlan {{intvars[interface].vlan}}
 {% endif -%}
 {% endfor %}
 #
