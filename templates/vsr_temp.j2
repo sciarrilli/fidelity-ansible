@@ -12,7 +12,7 @@
 #
 vlan 1
 #
-{% for vlan in vlanvars.keys() -%}
+{% for number in vlanvars.keys() -%}
 vlan {{number}}
 {% if vlanvars[number].name is defined %}
  name {{vlanvars[number].name}}
