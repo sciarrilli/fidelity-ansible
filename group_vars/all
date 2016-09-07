@@ -349,9 +349,34 @@ interfaces:
         GigabitEthernet6/0:
             ipv4: "10.4.6.16"
 
-# vlans
+# vlans on the leafs
 vlan:
     leaf01:
+        10:
+            name: "application10"
+        20:
+            name: "application20"
+    leaf02:
+        10:
+            name: "application10"
+        20:
+            name: "application20"
+    leaf03:
+        10:
+            name: "application10"
+        20:
+            name: "application20"
+    leaf04:
+        10:
+            name: "application10"
+        20:
+            name: "application20"
+    leaf05:
+        10:
+            name: "application10"
+        20:
+            name: "application20"
+    leaf06:
         10:
             name: "application10"
         20:
