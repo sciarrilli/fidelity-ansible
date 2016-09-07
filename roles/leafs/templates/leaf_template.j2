@@ -36,9 +36,14 @@ interface GigabitEthernet2/0
 #
 {% for interface in intvars.keys() -%}
 interface {{interface}}
- port link-mode route
 {% if intvars[interface].ipv4 is defined %}
+ port link-mode route
  ip address {{intvars[interface].ipv4}} 255.255.255.0
+{% endif -%}
+{% if intvars[interface].vlan is defined %}
+port link-mode bridge
+port link-type trunk
+port trunk permit vlan {{vlan}}
 {% endif -%}
 {% endfor %}
 #
