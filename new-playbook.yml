@@ -1,11 +1,12 @@
 ---
-- hosts: leafs
-  gather_facts: no
-  connection: local
-  roles:
-    - leafs
 - hosts: spines
   gather_facts: no
   connection: local
   roles:
     - spines
+    
+- hosts: leafs
+  gather_facts: no
+  connection: local
+  roles:
+    - leafs
