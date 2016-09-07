@@ -42,7 +42,7 @@ interface {{interface}}
 {% elif intvars[interface].vlan is defined %}
 port link-mode bridge
 port link-type trunk
-port trunk permit vlan {{vlan}}
+port trunk permit vlan {{intvars[interface].vlan}}
 {% endif -%}
 {% endfor %}
 #
