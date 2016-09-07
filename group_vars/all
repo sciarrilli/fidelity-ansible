@@ -292,7 +292,9 @@ interfaces:
         GigabitEthernet6/0:
             ipv4: "10.4.1.11"
         GigabitEthernet7/0:
-            vlan: "1 10 20"        
+            vlan: "1 10 20"
+        GigabitEthernet8/0:
+            vlan: "1 30 40"
     leaf02:
         lo:
             ipv4: "10.0.0.12"
@@ -304,6 +306,10 @@ interfaces:
             ipv4: "10.3.2.12"
         GigabitEthernet6/0:
             ipv4: "10.4.2.12"
+        GigabitEthernet7/0:
+            vlan: "1 10 20"
+        GigabitEthernet8/0:
+            vlan: "1 30 40"
     leaf03:
         lo:
             ipv4: "10.0.0.13"
@@ -315,6 +321,10 @@ interfaces:
             ipv4: "10.3.3.13"
         GigabitEthernet6/0:
             ipv4: "10.4.3.13"
+        GigabitEthernet7/0:
+            vlan: "1 10 20"
+        GigabitEthernet8/0:
+            vlan: "1 30 40"
     leaf04:
         lo:
             ipv4: "10.0.0.14"
@@ -326,6 +336,10 @@ interfaces:
             ipv4: "10.3.4.14"
         GigabitEthernet6/0:
             ipv4: "10.4.4.14"
+        GigabitEthernet7/0:
+            vlan: "1 10 20"
+        GigabitEthernet8/0:
+            vlan: "1 30 40"
     leaf05:
         lo:
             ipv4: "10.0.0.15"
@@ -337,6 +351,10 @@ interfaces:
             ipv4: "10.3.5.15"
         GigabitEthernet6/0:
             ipv4: "10.4.5.15"
+        GigabitEthernet7/0:
+            vlan: "1 10 20"
+        GigabitEthernet8/0:
+            vlan: "1 30 40"
     leaf06:
         lo:
             ipv4: "10.0.0.16"
@@ -348,7 +366,11 @@ interfaces:
             ipv4: "10.3.6.16"
         GigabitEthernet6/0:
             ipv4: "10.4.6.16"
-
+        GigabitEthernet7/0:
+            vlan: "1 10 20"
+        GigabitEthernet8/0:
+            vlan: "1 30 40"
+            
 # vlans on the leafs
 vlan:
     leaf01:
@@ -356,28 +378,52 @@ vlan:
             name: "application10"
         20:
             name: "application20"
+        30:
+            name: "application30"
+        40:
+            name: "application40"
     leaf02:
         10:
             name: "application10"
         20:
             name: "application20"
+        30:
+            name: "application30"
+        40:
+            name: "application40"
     leaf03:
         10:
             name: "application10"
         20:
             name: "application20"
+        30:
+            name: "application30"
+        40:
+            name: "application40"
     leaf04:
         10:
             name: "application10"
         20:
             name: "application20"
+        30:
+            name: "application30"
+        40:
+            name: "application40"
     leaf05:
         10:
             name: "application10"
         20:
             name: "application20"
+        30:
+            name: "application30"
+        40:
+            name: "application40"
     leaf06:
         10:
             name: "application10"
         20:
             name: "application20"
+        30:
+            name: "application30"
+        40:
+            name: "application40"
